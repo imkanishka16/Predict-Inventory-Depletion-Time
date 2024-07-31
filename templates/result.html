@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Prediction Result</h1>
+        <table class="table table-bordered">
+            <tr>
+                <th>Order Place Date</th>
+                <td>{{ order_place_date }}</td>
+            </tr>
+            <tr>
+                <th>Lot Size</th>
+                <td>{{ lot_size }}</td>
+            </tr>
+            <tr>
+                <th>Predicted Depletion Time (days)</th>
+                <td>{{ predicted_time }}</td>
+            </tr>
+            <tr>
+                <th>Estimated Depletion Date</th>
+                <td>{{ estimated_depletion_date }}</td>
+            </tr>
+        </table>
+        <a href="/" class="btn btn-primary">Predict Again</a>
+    </div>
+</body>
+</html>

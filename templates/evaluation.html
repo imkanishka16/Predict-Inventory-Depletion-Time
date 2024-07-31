@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Evaluation Results</title>
+</head>
+<body>
+    <h1>Model Evaluation Results</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Actual Depletion Time</th>
+                <th>Predicted Depletion Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for result in results %}
+            <tr>
+                <td>{{ result['Actual_Depletion_Time'] }}</td>
+                <td>{{ result['Predicted_Depletion_Time'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="/">Go Back</a>
+</body>
+</html>
